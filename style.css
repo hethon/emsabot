@@ -1,0 +1,41 @@
+:root,
+[data-bs-theme="light"] {
+  --bs-body-color: var(--tg-theme-text-color, --bs-body-color);
+  --bs-body-bg: var(--tg-theme-secondary-bg-color, --bs-body-bg);
+  --bs-border-color: var(--tg-theme-hint-color, --bs-border-color);
+}
+
+.container {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+.faq-section {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.accordion {
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem var(--tg-theme-link-color-rgba);
+  --bs-accordion-btn-focus-border-color: var(--tg-theme-link-color, --bs-accordion-btn-focus-border-color);
+  --bs-accordion-active-color: var(--tg-theme-link-color, --bs-primary-text);
+  --bs-accordion-active-bg: var(--bs-body-bg, --bs-primary-bg-subtle);
+}
+
+.accordion-item {
+    background-color: var(--tg-theme-bg-color, --bs-accordion-bg);
+}
+
+.accordion-button::after {
+  background: var(--bs-body-color);
+  -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background: var(--tg-theme-link-color, --bs-primary-text);
+}
+
+.accordion-button:focus {
+    box-shadow: var(--bs-accordion-btn-focus-box-shadow);
+}
