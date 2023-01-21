@@ -35,7 +35,7 @@
 }
 
 .accordion-button:not(.collapsed)::after {
-  background: var(--tg-theme-link-color, --bs-primary-text);
+  background: var(--tg-theme-button-text-color, --bs-primary-text);
 }
 
 .accordion-button:focus {
