@@ -21,7 +21,7 @@
   /*--bs-accordion-active-color: var(--tg-theme-link-color, --bs-primary-text);*/
   /*--bs-accordion-active-bg: var(--bs-body-bg, --bs-primary-bg-subtle);*/
   --bs-accordion-active-color: var(--tg-theme-button-text-color, --bs-primary-text);
-  --bs-accordion-active-bg: var(--tg-theme-button-color, --bs-primary-bg-subtle);
+  --bs-accordion-active-bg: var(--tg-theme-button-color-rgba, --bs-primary-bg-subtle);
 }
 
 .accordion-item {

@@ -483,18 +483,22 @@
     <script>
       Telegram.WebApp.ready();
       
-      function SetLinkColorRgba() {
+      function SetColorRgba() {
         var root = document.documentElement;
         if (root && root.style && root.style.setProperty) {
           root.style.setProperty(
             "--tg-theme-link-color-rgba", 
             `${Telegram.WebApp.themeParams.link_color}40`
           );
+          root.style.setProperty(
+            "--tg-theme-button-color-rgba", 
+            `${Telegram.WebApp.themeParams.button_color}40`
+          );
         }
       }
       
-      Telegram.WebApp.onEvent('themeChanged', SetLinkColorRgba);
-      SetLinkColorRgba();
+      Telegram.WebApp.onEvent('themeChanged', SetColorRgba);
+      SetColorRgba();
     </script>
   </body>
 </html>
